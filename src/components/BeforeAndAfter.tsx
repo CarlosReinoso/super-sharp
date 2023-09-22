@@ -1,3 +1,4 @@
+"use client";
 import { Grid, SxProps } from "@mui/material";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ export default function BeforeAndAfter({ sx }: { sx: SxProps }) {
           layout="responsive"
         />
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} sm={6} sx={{ maxWidth: "10px" }}>
         <Image
           src="/header/knife-after.jpeg"
           width={500}
