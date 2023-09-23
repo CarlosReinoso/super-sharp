@@ -4,8 +4,12 @@ import Image from "next/image";
 
 export default function BeforeAndAfter({ sx }: { sx: SxProps }) {
   return (
-    <Grid container spacing={2} sx={{ ...sx }}>
-      <Grid item xs={12} sm={6}>
+    <Grid
+      container
+      spacing={{ xs: 2, md: 10 }}
+      sx={{ ...sx, justifyContent: "center" }}
+    >
+      <Grid item xs={12} sm={6} md={4}>
         <Image
           src="/header/knife-before.jpeg"
           width={500}
@@ -14,7 +18,7 @@ export default function BeforeAndAfter({ sx }: { sx: SxProps }) {
           layout="responsive"
         />
       </Grid>
-      <Grid item xs={12} sm={6} sx={{ maxWidth: "10px" }}>
+      <Grid item xs={12} sm={6} md={4}>
         <Image
           src="/header/knife-after.jpeg"
           width={500}
