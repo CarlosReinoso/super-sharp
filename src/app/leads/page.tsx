@@ -1,3 +1,3 @@
 export default function LeadsPage() {
-  return <>leads page</>;
+  return <h1>leads page</h1>;
 }

@@ -28,6 +28,7 @@ export default function RootLayout({
         </Box>
       </ThemeRegistry> */}
       test
+      {children}
     </html>
   );
 }
