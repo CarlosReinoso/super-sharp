@@ -50,10 +50,13 @@ export default function Carousel() {
         <IconButton size="large" onClick={() => hasReachedMin()}>
           <ArrowBackIosNewIcon />
         </IconButton>
-        <Image
+        <Box
+          component="img"
           src={`/carousel/knife-service-${imageIndex}.webp`}
-          width={500}
-          height={500}
+          sx={{
+            maxWidth: { xs: 250, sm: 500, md: 600 },
+            maxHeight: { xs: 250, sm: 500, md: 600 },
+          }}
           alt="knife before"
         />
         <IconButton size="large" onClick={() => hasReachedMax()}>

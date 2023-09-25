@@ -5,7 +5,7 @@ import * as React from "react";
 export default function HomePage() {
   return (
     <>
-      <BeforeAndAfter sx={{ p: "40px 40px" }} />
+      <BeforeAndAfter sx={{ p: { xs: 4, md: 4 } }} />
       <Carousel />
     </>
   );

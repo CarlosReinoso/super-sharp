@@ -1,5 +1,5 @@
 "use client";
-import { Grid, SxProps } from "@mui/material";
+import { Box, Grid, SxProps } from "@mui/material";
 import Image from "next/image";
 
 export default function BeforeAndAfter({ sx }: { sx: SxProps }) {
@@ -10,21 +10,25 @@ export default function BeforeAndAfter({ sx }: { sx: SxProps }) {
       sx={{ ...sx, justifyContent: "center" }}
     >
       <Grid item xs={12} sm={6} md={4}>
-        <Image
+        <Box
+          component="img"
           src="/header/knife-before.jpeg"
-          width={500}
-          height={500}
+          sx={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
           alt="knife before"
-          layout="responsive"
         />
       </Grid>
       <Grid item xs={12} sm={6} md={4}>
-        <Image
+        <Box
+          component="img"
           src="/header/knife-after.jpeg"
-          width={500}
-          height={500}
+          sx={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
           alt="knife after"
-          layout="responsive"
         />
       </Grid>
     </Grid>
