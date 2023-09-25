@@ -20,13 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeRegistry>
+      {/* <ThemeRegistry>
         <Box component={"body"} className={inter.className}>
           <Header sx={{ mt: "10px" }} />
           <BeforeAndAfter sx={{ p: "40px 40px" }} />
           <Carousel />
         </Box>
-      </ThemeRegistry>
+      </ThemeRegistry> */}
+      test
     </html>
   );
 }
